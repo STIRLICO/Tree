@@ -37,5 +37,23 @@ public class NodeTest {
         assertFalse(root.findChildren("child"));
     }
 
+    @Test
+    public void DeleteAllChildrens(){
+        Node root = new Node("root");
+        Node child1 = new Node("child1");
+        Node child2 = new Node("child2");
+        root.addChildren(child1);
+        root.addChildren(child2);
+        assertEquals(2,root.getChildrens().size());
+        root.deleteAllChildrens();
+        assertEquals(0,root.getChildrens().size());
+    }
+
+    @Test
+    public void EditNode(){
+        Node node = new Node("root");
+        node.editNode("not_root")
+        assertEquals("not_root",node.getName());
+    }
 
 }
