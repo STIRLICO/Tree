@@ -24,7 +24,7 @@ public class NodeTest {
         Node root = new Node("root");
         Node child = new Node("child");
         root.addChildren(child);
-        assertTrue(root.findChildren("child"));
+        assertEquals(0,root.findChildren("child"));
     }
 
     @Test
@@ -32,9 +32,9 @@ public class NodeTest {
         Node root = new Node("root");
         Node child = new Node("child");
         root.addChildren(child);
-        assertTrue(root.findChildren("child"));
+        assertEquals(0,root.findChildren("child"));
         root.deleteChildren("child");
-        assertFalse(root.findChildren("child"));
+        assertEquals(-1,root.findChildren("child"));
     }
 
     @Test
