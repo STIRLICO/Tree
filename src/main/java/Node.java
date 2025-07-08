@@ -26,15 +26,16 @@ public class Node {
         return this.name;
     }
 
-    public boolean findChildren(String name) {
+    public int findChildren(String name) {
         List<Node> temp = this.childrens;
-        for (Node node : temp) {
-            if (Objects.equals(name, node.getName())){return true;}
+        for (int i = 0; i < temp.size(); i++) {
+            if (Objects.equals(name, temp.get(i).getName())){return i;}
         }
-        return false;
+        return -1;
     }
 
     public void deleteChildren(String name) {
+
     }
 
     public void deleteAllChildrens() {
