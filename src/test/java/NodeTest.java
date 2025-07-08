@@ -52,7 +52,7 @@ public class NodeTest {
     @Test
     public void EditNode(){
         Node node = new Node("root");
-        node.editNode("not_root")
+        node.editNode("not_root");
         assertEquals("not_root",node.getName());
     }
 
