@@ -25,7 +25,21 @@ public class NodeTest {
         Node root = new Node("root");
         Node child = new Node("child");
         root.addChildren(child);
-        assertEquals(0,root.findChildren("child"));
+        assertEquals(child,root.findChildren("child"));
+    }
+
+    @Test
+    public void FindDescendant(){
+        Node root = new Node("root");
+        Node child1 = new Node("child1");
+        Node child2 = new Node("child2");
+        root.addChildren(child1);
+        root.addChildren(child2);
+        Node child3 = new Node("child3");
+        Node child4 = new Node("child4");
+        root.childrens.get(1).addChildren(child3);
+        root.childrens.get(1).childrens.get(0).addChildren(child4);
+        assertEquals(child4 ,root.findDescendant("child4"));
     }
 
     @Test
@@ -33,9 +47,9 @@ public class NodeTest {
         Node root = new Node("root");
         Node child = new Node("child");
         root.addChildren(child);
-        assertEquals(0,root.findChildren("child"));
+        assertEquals(child,root.findChildren("child"));
         root.deleteChildren("child");
-        assertEquals(-1,root.findChildren("child"));
+        assertNull(root.findChildren("child"));
     }
 
     @Test

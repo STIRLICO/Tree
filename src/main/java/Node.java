@@ -27,18 +27,18 @@ public class Node {
         return this.name;
     }
 
-    public int findChildren(String name) {
+    public Node findChildren(String name) {
         List<Node> temp = this.childrens;
-        for (int i = 0; i < temp.size(); i++) {
-            if (Objects.equals(name, temp.get(i).getName())){
-                return i;
+        for (Node node : temp) {
+            if (Objects.equals(name, node.getName())) {
+                return node;
             }
         }
-        return -1;
+        return null;
     }
 
     public void deleteChildren(String name) {
-        if(this.findChildren(name) != -1){
+        if(this.findChildren(name) != null){
             this.childrens.remove(this.findChildren(name));
         }
 
@@ -57,5 +57,20 @@ public class Node {
 
     public int getID() {
         return this.id;
+    }
+
+    public Node findDescendant(String name) {
+        List<Node> temp1 = this.childrens;
+        for (Node node : temp1) {
+            if (Objects.equals(name, node.getName())) {
+                return node;
+            }
+        }
+        for (Node node : temp1) {
+            if (node.findDescendant(name) != null) {
+                return node.findDescendant(name);
+            }
+        }
+        return null;
     }
 }
