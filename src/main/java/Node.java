@@ -30,16 +30,27 @@ public class Node {
     public int findChildren(String name) {
         List<Node> temp = this.childrens;
         for (int i = 0; i < temp.size(); i++) {
-            if (Objects.equals(name, temp.get(i).getName())){return i;}
+            if (Objects.equals(name, temp.get(i).getName())){
+                return i;
+            }
         }
         return -1;
     }
 
     public void deleteChildren(String name) {
+        if(this.findChildren(name) != -1){
+            this.childrens.remove(this.findChildren(name));
+        }
 
     }
 
     public void deleteAllChildrens() {
+        if(!this.childrens.isEmpty()){
+            int size_temp = this.childrens.size();
+            for(int i = 0; i<size_temp; i++){
+                this.childrens.remove(0);
+            }
+        }
     }
 
     public void editNode(String name) {

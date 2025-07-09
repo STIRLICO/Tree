@@ -43,9 +43,11 @@ public class NodeTest {
         Node root = new Node("root");
         Node child1 = new Node("child1");
         Node child2 = new Node("child2");
+        Node child3 = new Node("child3");
         root.addChildren(child1);
         root.addChildren(child2);
-        assertEquals(2,root.getChildrens().size());
+        root.addChildren(child3);
+        assertEquals(3,root.getChildrens().size());
         root.deleteAllChildrens();
         assertEquals(0,root.getChildrens().size());
     }

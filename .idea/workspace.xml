@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="">
+    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="Я УМНЫЙ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NodeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -47,14 +51,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.NodeTest.CreateChildren.executor": "Run",
+    "JUnit.NodeTest.DeleteChildren.executor": "Run",
+    "JUnit.NodeTest.EditNode.executor": "Run",
     "JUnit.NodeTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.NodeTest.CreateChildren">
+  <component name="RunManager" selected="JUnit.NodeTest.DeleteAllChildrens">
     <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selivanovskiy_tree" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,10 +81,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NodeTest.DeleteAllChildrens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selivanovskiy_tree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NodeTest" />
+      <option name="METHOD_NAME" value="DeleteAllChildrens" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest.DeleteChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selivanovskiy_tree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NodeTest" />
+      <option name="METHOD_NAME" value="DeleteChildren" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest.EditNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selivanovskiy_tree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NodeTest" />
+      <option name="METHOD_NAME" value="EditNode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NodeTest.CreateChildren" />
+        <item itemvalue="JUnit.NodeTest.DeleteAllChildrens" />
         <item itemvalue="JUnit.NodeTest" />
+        <item itemvalue="JUnit.NodeTest.DeleteChildren" />
+        <item itemvalue="JUnit.NodeTest.EditNode" />
+        <item itemvalue="JUnit.NodeTest.CreateChildren" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +129,38 @@
       <option name="presentableId" value="Default" />
       <updated>1751966555864</updated>
     </task>
+    <task id="LOCAL-00001" summary="Я УМНЫЙ">
+      <option name="closed" value="true" />
+      <created>1752046047475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752046047475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Я УМНЫЙ">
+      <option name="closed" value="true" />
+      <created>1752046168842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752046168842</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Я УМНЫЙ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Я УМНЫЙ" />
   </component>
 </project>
