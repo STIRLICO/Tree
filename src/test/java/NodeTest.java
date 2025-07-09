@@ -20,7 +20,7 @@ public class NodeTest {
         assertEquals(child.id, root.getChildrens().get(0).getID());
     }
 
-
+    
     @Test
     public void FindChildren(){
         Node root = new Node("root");
