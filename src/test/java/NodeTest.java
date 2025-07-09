@@ -17,6 +17,7 @@ public class NodeTest {
         root.addChildren(child);
         assertEquals(1,root.getChildrens().size());
         assertEquals("child",root.getChildrens().get(0).getName());
+        assertEquals(1, root.getChildrens().get(0).getID());
     }
 
     @Test
