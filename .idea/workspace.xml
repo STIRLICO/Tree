@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="Поиск на любой глубине">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="Правки">
       <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NodeTest.java" afterDir="false" />
     </list>
@@ -55,6 +54,7 @@
     "JUnit.NodeTest.DeleteAllChildrens.executor": "Run",
     "JUnit.NodeTest.DeleteChildren.executor": "Run",
     "JUnit.NodeTest.EditNode.executor": "Run",
+    "JUnit.NodeTest.FindByID.executor": "Run",
     "JUnit.NodeTest.FindChildren.executor": "Run",
     "JUnit.NodeTest.FindDescendant.executor": "Debug",
     "JUnit.NodeTest.executor": "Run",
@@ -75,21 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeTest.DeleteAllChildrens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Selivanovskiy_tree" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NodeTest" />
-      <option name="METHOD_NAME" value="DeleteAllChildrens" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NodeTest.DeleteChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selivanovskiy_tree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NodeTest" />
       <option name="METHOD_NAME" value="DeleteChildren" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest.FindByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selivanovskiy_tree" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NodeTest" />
+      <option name="METHOD_NAME" value="FindByID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,10 +118,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NodeTest" />
+        <item itemvalue="JUnit.NodeTest.FindByID" />
         <item itemvalue="JUnit.NodeTest.DeleteChildren" />
         <item itemvalue="JUnit.NodeTest.FindChildren" />
         <item itemvalue="JUnit.NodeTest.FindDescendant" />
-        <item itemvalue="JUnit.NodeTest.DeleteAllChildrens" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752049560841</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Правки">
+      <option name="closed" value="true" />
+      <created>1752051191684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752051191684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +200,7 @@
     <MESSAGE value="Доделал тесты" />
     <MESSAGE value="Доделал реализацию" />
     <MESSAGE value="Поиск на любой глубине" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поиск на любой глубине" />
+    <MESSAGE value="Правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки" />
   </component>
 </project>

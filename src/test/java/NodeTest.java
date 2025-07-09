@@ -17,7 +17,7 @@ public class NodeTest {
         root.addChildren(child);
         assertEquals(1,root.getChildrens().size());
         assertEquals("child",root.getChildrens().get(0).getName());
-        assertEquals(14, root.getChildrens().get(0).getID());
+        assertEquals(child.id, root.getChildrens().get(0).getID());
     }
 
 
@@ -87,6 +87,24 @@ public class NodeTest {
         Node node = new Node("root");
         node.editNode("not_root");
         assertEquals("not_root",node.getName());
+    }
+
+    @Test
+    public void FindByID(){
+        Node root = new Node("root");
+        Node child1 = new Node("child1");
+        Node child2 = new Node("child2");
+        Node child3 = new Node("child1");
+        Node child4 = new Node("child1");
+        Node child5 = new Node("child2");
+        Node child6 = new Node("child2");
+        root.addChildren(child1);
+        root.addChildren(child2);
+        root.childrens.get(0).addChildren(child3);
+        root.childrens.get(0).addChildren(child5);
+        root.childrens.get(1).addChildren(child4);
+        root.childrens.get(1).addChildren(child6);
+        assertEquals(child6,root.findByID(child6.id));
     }
 
 }

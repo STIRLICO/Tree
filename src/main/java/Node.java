@@ -87,4 +87,19 @@ public class Node {
         }
         return null;
     }
+
+    public Node findByID(int id) {
+        List<Node> temp1 = this.childrens;
+        for (Node node : temp1) {
+            if (Objects.equals(id, node.getID())) {
+                return node;
+            }
+        }
+        for (Node node : temp1) {
+            if (node.findByID(id) != null) {
+                return node.findByID(id);
+            }
+        }
+        return null;
+    }
 }
