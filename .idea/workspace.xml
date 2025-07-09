@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="Доделал реализацию">
+    <list default="true" id="18bccd0c-9751-4f34-b7e5-03401cf54eb2" name="Changes" comment="Поиск на любой глубине">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NodeTest.java" afterDir="false" />
     </list>
@@ -54,6 +55,8 @@
     "JUnit.NodeTest.DeleteAllChildrens.executor": "Run",
     "JUnit.NodeTest.DeleteChildren.executor": "Run",
     "JUnit.NodeTest.EditNode.executor": "Run",
+    "JUnit.NodeTest.FindChildren.executor": "Run",
+    "JUnit.NodeTest.FindDescendant.executor": "Debug",
     "JUnit.NodeTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -62,7 +65,7 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.NodeTest.FindDescendant">
+  <component name="RunManager" selected="JUnit.NodeTest">
     <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selivanovskiy_tree" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,11 +95,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeTest.EditNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NodeTest.FindChildren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selivanovskiy_tree" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NodeTest" />
-      <option name="METHOD_NAME" value="EditNode" />
+      <option name="METHOD_NAME" value="FindChildren" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NodeTest.FindDescendant" />
         <item itemvalue="JUnit.NodeTest" />
-        <item itemvalue="JUnit.NodeTest.DeleteAllChildrens" />
         <item itemvalue="JUnit.NodeTest.DeleteChildren" />
-        <item itemvalue="JUnit.NodeTest.EditNode" />
+        <item itemvalue="JUnit.NodeTest.FindChildren" />
+        <item itemvalue="JUnit.NodeTest.FindDescendant" />
+        <item itemvalue="JUnit.NodeTest.DeleteAllChildrens" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752047392500</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Поиск на любой глубине">
+      <option name="closed" value="true" />
+      <created>1752049560841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752049560841</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +191,7 @@
     <MESSAGE value="Я УМНЫЙ" />
     <MESSAGE value="Доделал тесты" />
     <MESSAGE value="Доделал реализацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделал реализацию" />
+    <MESSAGE value="Поиск на любой глубине" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поиск на любой глубине" />
   </component>
 </project>

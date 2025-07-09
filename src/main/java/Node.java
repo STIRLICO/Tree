@@ -5,18 +5,20 @@ import java.util.List;
 import java.util.Objects;
 
 public class Node {
+    static int allid = 0;
     int id;
     String name;
     List<Node> childrens = new ArrayList<Node>();
 
     public Node(String name) {
-        this.id = 0;
+        this.id = allid;
         this.name = name;
+        allid += 1;
     }
 
     public void addChildren(Node child) {
         this.childrens.add(child);
-        this.childrens.get(this.childrens.size()-1).id = this.childrens.size();
+
     }
 
     public List<Node> getChildrens() {
@@ -53,6 +55,18 @@ public class Node {
 
     public void editNode(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Node node = (Node) o;
+        return id == node.id && Objects.equals(name, node.name) && Objects.equals(childrens, node.childrens);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, childrens);
     }
 
     public int getID() {
