@@ -47,9 +47,7 @@ public class Node {
     public void deleteAllChildrens() {
         if(!this.childrens.isEmpty()){
             int size_temp = this.childrens.size();
-            for(int i = 0; i<size_temp; i++){
-                this.childrens.remove(0);
-            }
+            this.childrens.subList(0, size_temp).clear();
         }
     }
 
